@@ -6,13 +6,13 @@ __Examples:__
 
 ```swift
 // Simple GET
-http.get( 'http://google.com', callback: { error, data in
+http.get( "http://google.com", callback: { error, data in
   // Handle error : NSError?, data : AnyObject?
 })
 
 // POST some JSON
 http
-  .url('http://my-api.com/users')
+  .url("http://my-api.com/users")
   .json()
   .data([
     "name": "Bob"
@@ -59,7 +59,7 @@ var bob = User(
 )
 
 var usersHttp = http
-  .url('http://myapp.com/api/users')
+  .url("http://myapp.com/api/users")
   .json()
   // Serializers must return NSData
   // Use the built-in toNSData serializer to go from String->NSData
