@@ -1,7 +1,5 @@
 ![Swift HTTP](http://storage.j0.hn/swift-http-logo.png)
 
-> Beautiful HTTP requests in swift
-
 __Examples:__
 
 ```swift
